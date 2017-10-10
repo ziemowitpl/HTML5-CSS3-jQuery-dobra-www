@@ -34,7 +34,8 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
     font-weight: 300;
@@ -48,4 +49,17 @@ h1 {
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+}
+
+.btn-full {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn-ghost {
+    border: 1px solid #e67e22;
+    color: #e67e22;
 }
