@@ -23,6 +23,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clerfix {zoom: 1}
+.clerfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*-----------------------------------------*/
 /*REUSABLE COMPONENTS*/
 /*-----------------------------------------*/
