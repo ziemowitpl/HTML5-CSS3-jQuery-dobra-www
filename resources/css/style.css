@@ -191,6 +191,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -359,5 +360,10 @@ header {
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
+}
 
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
 }
