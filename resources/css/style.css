@@ -175,8 +175,7 @@ input[type=submit]:active {
 }
 
 .btn-full:hover,
-.btn-full:active,
-input[type=submit] {
+.btn-full:active {
     border: 1px solid #cf6d17;
 
 }
@@ -475,4 +474,12 @@ textarea {
 
 textarea {
     height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
 }
