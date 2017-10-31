@@ -448,3 +448,21 @@ cite img {
 .plan-box ul li {
     padding: 5px 0;
 }
+
+/*-----------------------------------------*/
+/*CONTACT FORM*/
+/*-----------------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+}
