@@ -82,15 +82,43 @@
 
     .col {
         width: 100%;
+        margin: 0 0 4% 0;
     }
 
     .main-nav {
         display: none;
     }
 
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+
     .long-copy {
         width: 100%;
         margin-left: 0%;
+    }
+
+    .app-screen {
+        width:40%;
+    }
+    .steps-box:first-child {
+        text-align: center;
+    }
+    .works-step {
+        margin-bottom: 20px;
+    }
+    .works-step:last-of-type {
+        margin-bottom: 20px;
+    }
+    .works-step div {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        font-size: 120%;
+        margin-right: 15px;
     }
 
 }
