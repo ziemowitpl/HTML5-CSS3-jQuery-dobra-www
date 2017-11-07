@@ -271,7 +271,7 @@ header {
     z-index: 10;
 }
 
-.main-nav {
+.sticky .main-nav {
     margin-top: 18px;
 }
 
