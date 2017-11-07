@@ -225,6 +225,10 @@ header {
     float: left;
     margin-top: 20px;
 }
+
+.logo-black {
+    display: none;
+}
 /*--------Main navi-------*/
 .main-nav {
     float: right;
@@ -267,6 +271,10 @@ header {
     padding: 8px 0;
     color: #555;
 
+}
+
+.sticky .logo-black {
+    display: block;
 }
 /*-----------------------------------------*/
 /*FEATURES*/
