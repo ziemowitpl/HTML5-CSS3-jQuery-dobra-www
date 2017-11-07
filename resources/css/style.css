@@ -273,6 +273,9 @@ header {
 
 }
 
+.sticky .logo {
+    display: none;
+}
 .sticky .logo-black {
     display: block;
 }
