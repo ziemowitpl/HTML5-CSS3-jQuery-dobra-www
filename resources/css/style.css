@@ -225,6 +225,7 @@ header {
     margin-top: 20px;
 }
 .logo-black {
+    display: none;
     height: 50px;
     width: auto;
     float: left;
