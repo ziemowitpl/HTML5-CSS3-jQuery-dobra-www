@@ -1,22 +1,23 @@
 $(document).ready(function() {
 
     // For the sticky navigation
-    $('.js--section-features').waypoint(function(direction) {
+    $('.js--section-start').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
         } else {
             $('nav').removeClass('sticky');
         }
     }, {
-        offset: '120px'
+        offset: '90%'
     });
 
-    // Scroll on buttons
+    // Scroll on buttons - two buttons
+
     $('.js--scroll-to-plans').click(function () {
         $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000);
     });
     $('.js--scroll-to-start').click(function () {
-        $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000);
+        $('html, body').animate({scrollTop: $('.js--section-start').offset().top}, 1000);
     });
 
     // Navigation scroll
@@ -42,19 +43,84 @@ $(document).ready(function() {
         offset: '50%'
     });
     $('.js--wp-2').waypoint(function(direction) {
-        $('.js--wp-2').addClass('animated fadeInUp');
+        $('.js--wp-2').addClass('animated jackInTheBox');
     }, {
         offset: '50%'
     });
     $('.js--wp-3').waypoint(function(direction) {
-        $('.js--wp-3').addClass('animated fadeIn');
+        $('.js--wp-3').addClass('animated pulse');
     }, {
         offset: '50%'
     });
-    $('.js--wp-4').waypoint(function(direction) {
-        $('.js--wp-4').addClass('animated pulse');
-    }, {
-        offset: '50%'
+
+
+    // Mobile nav
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+
+        nav.slideToggle(200);
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
     });
+
+    // Maps
+    var map = new GMaps({
+        div: '.map',
+        lat: 50.293838,
+        lng: 18.85,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 50.293838,
+        lng: 18.6655291,
+        title: 'Gliwice',
+        infoWindow: {
+            content: '<p>Our Poland HQ</p>'
+        }
+    });
+
+    //max-width: 1023px
+    var map = new GMaps({
+        div: '.map-xl',
+        lat: 50.293838,
+        lng: 18.75,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 50.293838,
+        lng: 18.6655291,
+        title: 'Gliwice',
+        infoWindow: {
+            content: '<p>Our Poland HQ</p>'
+        }
+    });
+
+    //max-width: 767px
+    var map = new GMaps({
+        div: '.map-sm',
+        lat: 50.293838,
+        lng: 18.67,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 50.293838,
+        lng: 18.6655291,
+        title: 'Gliwice',
+        infoWindow: {
+            content: '<p>Our Poland HQ</p>'
+        }
+    });
+
+    // YT PLAYER
+    $('.player').YTPlayer();
 
 });
